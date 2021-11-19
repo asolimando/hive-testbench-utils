@@ -15,4 +15,11 @@ echo "Unpack libraries and cleanup"
 unzip lib.zip
 rm lib.zip
 
+echo "Clone hive-testbench project"
+git clone https://github.com/asolimando/hive-testbench.git
+
+echo "Building hive-testbench binaries"
+~/hive-testbench/tpcds-build.sh
+
 echo "Setup completed!"
+echo "Now create data by running: ~/hive-testbench/tpcds-setup.sh $SCALE"
