@@ -1,5 +1,5 @@
 #!/bin/bash
-DATASET=${1:-""}
+DATASET=${1:-"tpcds"}
 SCALE=${2:-2}
 REPETITIONS=${3:-10}
 
