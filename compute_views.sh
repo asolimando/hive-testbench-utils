@@ -1,4 +1,5 @@
 #!/bin/bash
+db_name=${db_name:-"tpcds_bin_partitioned_orc_2"}
 
 cd ~
 
